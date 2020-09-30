@@ -164,6 +164,7 @@
             this.Name = "FrmNovo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novo Produto";
+            this.Load += new System.EventHandler(this.FrmNovo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

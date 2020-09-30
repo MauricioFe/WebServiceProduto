@@ -47,7 +47,8 @@ namespace ConsumoWebProduto
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
+            FrmNovo form = new FrmNovo(this, produto);
+            form.ShowDialog();
         }
     }
 }

@@ -13,13 +13,17 @@ namespace ConsumoWebProduto
     public partial class FrmNovo : Form
     {
         Form1 form1;
+        ServiceProduto.ProdutoServiceSoapClient client = new ServiceProduto.ProdutoServiceSoapClient();
+        ServiceProduto.Produtos produto = new ServiceProduto.Produtos();
         public FrmNovo(Form1 form)
         {
+
             this.form1 = form;
             InitializeComponent();
         }
-        public FrmNovo(Form1 form, int id)
+        public FrmNovo(Form1 form, ServiceProduto.Produtos produto)
         {
+            this.produto = produto;
             this.form1 = form;
             InitializeComponent();
         }
@@ -31,18 +35,37 @@ namespace ConsumoWebProduto
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            ServiceProduto.ProdutoServiceSoapClient client = new ServiceProduto.ProdutoServiceSoapClient();
-            ServiceProduto.Produtos produto = new ServiceProduto.Produtos();
-            produto.Id = int.Parse(txtId.Text);
-            produto.Nome = txtNome.Text;
-            produto.Preco = double.Parse(txtPreco.Text);
-            produto.Estoque = int.Parse(txtEstoque.Text);
-            produto.Descricao= txtDescricao.Text;
-            client.Post(produto);
+            if (produto.Id > 0)
+            {
+                produto.Id = int.Parse(txtId.Text);
+                produto.Nome = txtNome.Text;
+                produto.Preco = double.Parse(txtPreco.Text);
+                produto.Estoque = int.Parse(txtEstoque.Text);
+                produto.Descricao = txtDescricao.Text;
+                client.Post(produto);
 
-            MessageBox.Show("Inserido com sucesso");
-           
-            form1.AtualizaGrid();
+                MessageBox.Show("Inserido com sucesso");
+
+                form1.AtualizaGrid();
+            }
+            else
+            {
+                produto.Id = int.Parse(txtId.Text);
+                produto.Nome = txtNome.Text;
+                produto.Preco = double.Parse(txtPreco.Text);
+                produto.Estoque = int.Parse(txtEstoque.Text);
+                produto.Descricao = txtDescricao.Text;
+                client.Put(produto);
+
+                MessageBox.Show("Editado com sucesso");
+
+                form1.AtualizaGrid();
+            }
+        }
+
+        private void FrmNovo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
