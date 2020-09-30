@@ -26,14 +26,13 @@ namespace ConsumoWebProduto
 
         public void AtualizaGrid()
         {
-
             ServiceProduto.ProdutoServiceSoapClient client = new ProdutoServiceSoapClient();
             dgvProdutos.DataSource = client.GetProdutos();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FrmNovo form = new FrmNovo();
+            FrmNovo form = new FrmNovo(this);
             form.ShowDialog();
         }
     }

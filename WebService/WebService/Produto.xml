@@ -7,4 +7,18 @@
     <Estoque>100</Estoque>
     <Descricao>Água mineral</Descricao>
   </Produto>
+  <Produto>
+    <ID>2</ID>
+    <Nome>Caneta</Nome>
+    <Preco>150</Preco>
+    <Estoque>15</Estoque>
+    <Descricao>Caneta bic preta</Descricao>
+  </Produto>
+  <Produto>
+    <ID>3</ID>
+    <Nome>Patinho de borracha</Nome>
+    <Preco>4000</Preco>
+    <Estoque>25</Estoque>
+    <Descricao>Para todo bom programador o seu melhor debugador</Descricao>
+  </Produto>
 </Produtos>

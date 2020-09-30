@@ -88,7 +88,7 @@
             this.txtNome.Location = new System.Drawing.Point(65, 123);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(315, 29);
-            this.txtNome.TabIndex = 4;
+            this.txtNome.TabIndex = 1;
             // 
             // label4
             // 
@@ -104,7 +104,7 @@
             this.txtEstoque.Location = new System.Drawing.Point(65, 267);
             this.txtEstoque.Name = "txtEstoque";
             this.txtEstoque.Size = new System.Drawing.Size(315, 29);
-            this.txtEstoque.TabIndex = 6;
+            this.txtEstoque.TabIndex = 3;
             // 
             // label5
             // 
@@ -121,14 +121,14 @@
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(315, 120);
-            this.txtDescricao.TabIndex = 8;
+            this.txtDescricao.TabIndex = 4;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Location = new System.Drawing.Point(231, 481);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(109, 34);
-            this.btnSalvar.TabIndex = 10;
+            this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -138,7 +138,7 @@
             this.button1.Location = new System.Drawing.Point(116, 481);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 34);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

@@ -75,13 +75,12 @@
             // 
             // Form1
             // 
-            
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(829, 501);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvProdutos);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(829, 501);
             this.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";

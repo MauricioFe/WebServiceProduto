@@ -17,3 +17,4 @@ C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consu
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.csproj.CoreCompileInputs.cache
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.exe
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.pdb
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.FrmNovo.resources

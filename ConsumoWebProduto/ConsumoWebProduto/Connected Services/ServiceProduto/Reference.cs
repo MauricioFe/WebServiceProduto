@@ -123,7 +123,7 @@ namespace ConsumoWebProduto.ServiceProduto {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceProduto.ProdutoServiceSoap")]
     public interface ProdutoServiceSoap {
         
-        // CODEGEN: Generating message contract since element name PostResult from namespace http://tempuri.org/ is not marked nillable
+        // CODEGEN: Generating message contract since element name produto from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Post", ReplyAction="*")]
         ConsumoWebProduto.ServiceProduto.PostResponse Post(ConsumoWebProduto.ServiceProduto.PostRequest request);
         
@@ -151,7 +151,7 @@ namespace ConsumoWebProduto.ServiceProduto {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Delete", ReplyAction="*")]
         System.Threading.Tasks.Task<ConsumoWebProduto.ServiceProduto.DeleteResponse> DeleteAsync(ConsumoWebProduto.ServiceProduto.DeleteRequest request);
         
-        // CODEGEN: Generating message contract since element name PutResult from namespace http://tempuri.org/ is not marked nillable
+        // CODEGEN: Generating message contract since element name produto from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Put", ReplyAction="*")]
         ConsumoWebProduto.ServiceProduto.PutResponse Put(ConsumoWebProduto.ServiceProduto.PutRequest request);
         
@@ -179,10 +179,17 @@ namespace ConsumoWebProduto.ServiceProduto {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
     public partial class PostRequestBody {
         
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public ConsumoWebProduto.ServiceProduto.Produtos produto;
+        
         public PostRequestBody() {
+        }
+        
+        public PostRequestBody(ConsumoWebProduto.ServiceProduto.Produtos produto) {
+            this.produto = produto;
         }
     }
     
@@ -437,10 +444,17 @@ namespace ConsumoWebProduto.ServiceProduto {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute()]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
     public partial class PutRequestBody {
         
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public ConsumoWebProduto.ServiceProduto.Produtos produto;
+        
         public PutRequestBody() {
+        }
+        
+        public PutRequestBody(ConsumoWebProduto.ServiceProduto.Produtos produto) {
+            this.produto = produto;
         }
     }
     
@@ -510,9 +524,10 @@ namespace ConsumoWebProduto.ServiceProduto {
             return base.Channel.Post(request);
         }
         
-        public ConsumoWebProduto.ServiceProduto.Produtos Post() {
+        public ConsumoWebProduto.ServiceProduto.Produtos Post(ConsumoWebProduto.ServiceProduto.Produtos produto) {
             ConsumoWebProduto.ServiceProduto.PostRequest inValue = new ConsumoWebProduto.ServiceProduto.PostRequest();
             inValue.Body = new ConsumoWebProduto.ServiceProduto.PostRequestBody();
+            inValue.Body.produto = produto;
             ConsumoWebProduto.ServiceProduto.PostResponse retVal = ((ConsumoWebProduto.ServiceProduto.ProdutoServiceSoap)(this)).Post(inValue);
             return retVal.Body.PostResult;
         }
@@ -522,9 +537,10 @@ namespace ConsumoWebProduto.ServiceProduto {
             return base.Channel.PostAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsumoWebProduto.ServiceProduto.PostResponse> PostAsync() {
+        public System.Threading.Tasks.Task<ConsumoWebProduto.ServiceProduto.PostResponse> PostAsync(ConsumoWebProduto.ServiceProduto.Produtos produto) {
             ConsumoWebProduto.ServiceProduto.PostRequest inValue = new ConsumoWebProduto.ServiceProduto.PostRequest();
             inValue.Body = new ConsumoWebProduto.ServiceProduto.PostRequestBody();
+            inValue.Body.produto = produto;
             return ((ConsumoWebProduto.ServiceProduto.ProdutoServiceSoap)(this)).PostAsync(inValue);
         }
         
@@ -606,9 +622,10 @@ namespace ConsumoWebProduto.ServiceProduto {
             return base.Channel.Put(request);
         }
         
-        public ConsumoWebProduto.ServiceProduto.Produtos Put() {
+        public ConsumoWebProduto.ServiceProduto.Produtos Put(ConsumoWebProduto.ServiceProduto.Produtos produto) {
             ConsumoWebProduto.ServiceProduto.PutRequest inValue = new ConsumoWebProduto.ServiceProduto.PutRequest();
             inValue.Body = new ConsumoWebProduto.ServiceProduto.PutRequestBody();
+            inValue.Body.produto = produto;
             ConsumoWebProduto.ServiceProduto.PutResponse retVal = ((ConsumoWebProduto.ServiceProduto.ProdutoServiceSoap)(this)).Put(inValue);
             return retVal.Body.PutResult;
         }
@@ -618,9 +635,10 @@ namespace ConsumoWebProduto.ServiceProduto {
             return base.Channel.PutAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsumoWebProduto.ServiceProduto.PutResponse> PutAsync() {
+        public System.Threading.Tasks.Task<ConsumoWebProduto.ServiceProduto.PutResponse> PutAsync(ConsumoWebProduto.ServiceProduto.Produtos produto) {
             ConsumoWebProduto.ServiceProduto.PutRequest inValue = new ConsumoWebProduto.ServiceProduto.PutRequest();
             inValue.Body = new ConsumoWebProduto.ServiceProduto.PutRequestBody();
+            inValue.Body.produto = produto;
             return ((ConsumoWebProduto.ServiceProduto.ProdutoServiceSoap)(this)).PutAsync(inValue);
         }
     }
