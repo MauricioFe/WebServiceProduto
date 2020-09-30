@@ -37,6 +37,8 @@
             // 
             // dgvProdutos
             // 
+            this.dgvProdutos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProdutos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProdutos.Location = new System.Drawing.Point(12, 57);
             this.dgvProdutos.Name = "dgvProdutos";
@@ -51,6 +53,7 @@
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Novo Produto";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDeletar
             // 
