@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -25,7 +27,7 @@ namespace WebService
             XElement x = new XElement("Produto");
             x.Add(new XElement("ID", produto.Id.ToString()));
             x.Add(new XElement("Nome", produto.Nome.ToString()));
-            x.Add(new XElement("Preco", produto.Preco.ToString()));
+            x.Add(new XElement("Preco", produto.Preco.ToString("F2")));
             x.Add(new XElement("Estoque", produto.Estoque.ToString()));
             x.Add(new XElement("Descricao", produto.Descricao.ToString()));
             XElement xml = null;
@@ -51,7 +53,7 @@ namespace WebService
                 {
                     Id = int.Parse(element.Element("ID").Value),
                     Nome = element.Element("Nome").Value,
-                    Preco = double.Parse(element.Element("Preco").Value),
+                    Preco = Convert.ToDouble(element.Element("Preco").Value, CultureInfo.InvariantCulture),
                     Estoque = int.Parse(element.Element("Estoque").Value),
                     Descricao = element.Element("Descricao").Value
                 };
@@ -67,7 +69,7 @@ namespace WebService
             var elements = xml.Elements().Where(p => p.Element("ID").Value.Equals(id.ToString())).First();
             produto.Id = int.Parse(elements.Element("ID").Value);
             produto.Nome = elements.Element("Nome").Value;
-            produto.Preco = double.Parse(elements.Element("Preco").Value);
+            produto.Preco = double.Parse(elements.Element("Preco").Value, CultureInfo.InvariantCulture) ;
             produto.Estoque = int.Parse(elements.Element("Estoque").Value);
             produto.Descricao = elements.Element("Descricao").Value;
 
@@ -97,7 +99,7 @@ namespace WebService
             if (element != null)
             {
                 element.Element("Nome").SetValue(produto.Nome);
-                element.Element("Preco").SetValue(produto.Preco);
+                element.Element("Preco").SetValue(produto.Preco.ToString("F2"));
                 element.Element("Estoque").SetValue(produto.Estoque);
                 element.Element("Descricao").SetValue(produto.Descricao);
             }

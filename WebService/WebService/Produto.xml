@@ -10,22 +10,8 @@
   <Produto>
     <ID>2</ID>
     <Nome>Caneta</Nome>
-    <Preco>150</Preco>
-    <Estoque>15</Estoque>
-    <Descricao>Caneta bic preta</Descricao>
-  </Produto>
-  <Produto>
-    <ID>3</ID>
-    <Nome>Patinho de borracha</Nome>
-    <Preco>40.99</Preco>
-    <Estoque>25</Estoque>
-    <Descricao>Para todo bom programador o seu melhor debugador</Descricao>
-  </Produto>
-  <Produto>
-    <ID>3</ID>
-    <Nome>Patinho de borracha</Nome>
-    <Preco>40</Preco>
-    <Estoque>25</Estoque>
-    <Descricao>Para todo bom programador o seu melhor debugador</Descricao>
+    <Preco>2599,00</Preco>
+    <Estoque>10</Estoque>
+    <Descricao>Caneta preta bic</Descricao>
   </Produto>
 </Produtos>

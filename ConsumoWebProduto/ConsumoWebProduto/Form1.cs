@@ -47,8 +47,15 @@ namespace ConsumoWebProduto
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            FrmNovo form = new FrmNovo(this, produto);
-            form.ShowDialog();
+            if (produto.Id != 0)
+            {
+                FrmNovo form = new FrmNovo(this, produto);
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Selecione ao menos um produto na lista");
+            }
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
