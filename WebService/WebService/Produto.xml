@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Produtos>
+  <Produto>
+    <ID>1</ID>
+    <Nome>Garrafa de agua</Nome>
+    <Preco>2</Preco>
+    <Estoque>100</Estoque>
+    <Descricao>Água mineral</Descricao>
+  </Produto>
+</Produtos>
