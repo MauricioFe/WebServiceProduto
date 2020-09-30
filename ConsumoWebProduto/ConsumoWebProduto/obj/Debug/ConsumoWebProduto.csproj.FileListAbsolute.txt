@@ -7,3 +7,13 @@ C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consu
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.csproj.CoreCompileInputs.cache
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.exe
 C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.pdb
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\bin\Debug\ConsumoWebProduto.exe.config
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\bin\Debug\ConsumoWebProduto.exe
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\bin\Debug\ConsumoWebProduto.pdb
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.csprojAssemblyReference.cache
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.Form1.resources
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.Properties.Resources.resources
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.csproj.GenerateResource.cache
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.exe
+C:\Users\mauri\Desktop\Treinamento\ProvasAprovadas\Sessao4SC\Projetos para consulta\WebServiceProduto\ConsumoWebProduto\ConsumoWebProduto\obj\Debug\ConsumoWebProduto.pdb
