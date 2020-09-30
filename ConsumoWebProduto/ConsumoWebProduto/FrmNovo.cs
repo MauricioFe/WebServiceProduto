@@ -26,6 +26,11 @@ namespace ConsumoWebProduto
             this.produto = produto;
             this.form1 = form;
             InitializeComponent();
+            txtId.Text = produto.Id.ToString();
+            txtNome.Text = produto.Nome;
+            txtPreco.Text = produto.Preco.ToString();
+            txtEstoque.Text = produto.Estoque.ToString();
+            txtDescricao.Text = produto.Descricao;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,9 +47,9 @@ namespace ConsumoWebProduto
                 produto.Preco = double.Parse(txtPreco.Text);
                 produto.Estoque = int.Parse(txtEstoque.Text);
                 produto.Descricao = txtDescricao.Text;
-                client.Post(produto);
+                client.Put(produto);
 
-                MessageBox.Show("Inserido com sucesso");
+                MessageBox.Show("Editado com sucesso");
 
                 form1.AtualizaGrid();
             }
@@ -55,9 +60,9 @@ namespace ConsumoWebProduto
                 produto.Preco = double.Parse(txtPreco.Text);
                 produto.Estoque = int.Parse(txtEstoque.Text);
                 produto.Descricao = txtDescricao.Text;
-                client.Put(produto);
+                client.Post(produto);
 
-                MessageBox.Show("Editado com sucesso");
+                MessageBox.Show("Inserido com sucesso");
 
                 form1.AtualizaGrid();
             }

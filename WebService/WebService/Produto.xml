@@ -17,7 +17,14 @@
   <Produto>
     <ID>3</ID>
     <Nome>Patinho de borracha</Nome>
-    <Preco>4000</Preco>
+    <Preco>40.99</Preco>
+    <Estoque>25</Estoque>
+    <Descricao>Para todo bom programador o seu melhor debugador</Descricao>
+  </Produto>
+  <Produto>
+    <ID>3</ID>
+    <Nome>Patinho de borracha</Nome>
+    <Preco>40</Preco>
     <Estoque>25</Estoque>
     <Descricao>Para todo bom programador o seu melhor debugador</Descricao>
   </Produto>
