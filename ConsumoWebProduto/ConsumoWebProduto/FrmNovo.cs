@@ -21,5 +21,11 @@ namespace ConsumoWebProduto
         {
             this.Dispose();
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            ServiceProduto.ProdutoServiceSoapClient client = new ServiceProduto.ProdutoServiceSoapClient();
+            client.Post();
+        }
     }
 }
