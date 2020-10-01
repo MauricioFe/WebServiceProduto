@@ -14,11 +14,7 @@ namespace ConsumoWebProduto
         ServiceProduto.ProdutoServiceSoapClient client = new ProdutoServiceSoapClient();
         private void Form1_Load(object sender, EventArgs e)
         {
-            AtualizaGrid();
-    
-
-           
-            
+            AtualizaGrid()
         }
 
         public void AtualizaGrid()
