@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Produtos>
   <Produto>
-    <ID>1</ID>
-    <Nome>Garrafa de agua</Nome>
-    <Preco>2</Preco>
-    <Estoque>100</Estoque>
-    <Descricao>Água mineral</Descricao>
+    <ID>3</ID>
+    <Nome>tv</Nome>
+    <Preco>200,00</Preco>
+    <Estoque>10</Estoque>
+    <Descricao>É uma tv de teste</Descricao>
   </Produto>
   <Produto>
-    <ID>2</ID>
-    <Nome>Caneta</Nome>
-    <Preco>2599,00</Preco>
+    <ID>1</ID>
+    <Nome>PC</Nome>
+    <Preco>3400,00</Preco>
     <Estoque>10</Estoque>
-    <Descricao>Caneta preta bic</Descricao>
+    <Descricao>É uma pc de teste</Descricao>
   </Produto>
 </Produtos>

@@ -22,8 +22,9 @@ namespace WebService
     {
         string currentFile = $@"{AppDomain.CurrentDomain.BaseDirectory}Produto.xml";
         [WebMethod]
-        public Produtos Post(Produtos produto)
+        public Produtos Post(int id, string nome, double preco, int estoque, string descricao)
         {
+            Produtos produto = new Produtos(id, nome, preco, estoque, descricao);
             XElement x = new XElement("Produto");
             x.Add(new XElement("ID", produto.Id.ToString()));
             x.Add(new XElement("Nome", produto.Nome.ToString()));
@@ -92,8 +93,9 @@ namespace WebService
         }
 
         [WebMethod]
-        public Produtos Put(Produtos produto)
+        public Produtos Put(int id, string nome, double preco, int estoque, string descricao)
         {
+            Produtos produto = new Produtos(id, nome, preco, estoque, descricao);
             var xml = XElement.Load(currentFile);
             var element = xml.Elements().Where(p => p.Element("ID").Value.Equals(produto.Id.ToString())).First();
             if (element != null)
