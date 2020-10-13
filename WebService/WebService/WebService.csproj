@@ -102,7 +102,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50210</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44389/</IISUrl>
+          <IISUrl>http://192.168.0.108:50210/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
