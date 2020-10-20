@@ -2,9 +2,23 @@
 <Produtos>
   <Produto>
     <ID>1</ID>
-    <Nome>Celular </Nome>
-    <Preco>150,00</Preco>
+    <Nome>Bacon Premium</Nome>
+    <Preco>200,00</Preco>
     <Estoque>10</Estoque>
-    <Descricao>Xioami</Descricao>
+    <Descricao>dfewfew</Descricao>
+  </Produto>
+  <Produto>
+    <ID>2</ID>
+    <Nome>Milho</Nome>
+    <Preco>5,00</Preco>
+    <Estoque>10</Estoque>
+    <Descricao>njkldasjf</Descricao>
+  </Produto>
+  <Produto>
+    <ID>3</ID>
+    <Nome>Bacon</Nome>
+    <Preco>123,00</Preco>
+    <Estoque>123</Estoque>
+    <Descricao>123123123123123</Descricao>
   </Produto>
 </Produtos>
