@@ -1,24 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Produtos>
   <Produto>
-    <ID>1</ID>
-    <Nome>Bacon Premium</Nome>
-    <Preco>200,00</Preco>
-    <Estoque>10</Estoque>
-    <Descricao>dfewfew</Descricao>
-  </Produto>
-  <Produto>
     <ID>2</ID>
-    <Nome>Milho</Nome>
-    <Preco>5,00</Preco>
-    <Estoque>10</Estoque>
-    <Descricao>njkldasjf</Descricao>
+    <Nome>h</Nome>
+    <Preco>222,00</Preco>
+    <Estoque>33</Estoque>
+    <Descricao>jj</Descricao>
   </Produto>
   <Produto>
     <ID>3</ID>
-    <Nome>Bacon</Nome>
+    <Nome>bacon3</Nome>
     <Preco>123,00</Preco>
-    <Estoque>123</Estoque>
-    <Descricao>123123123123123</Descricao>
+    <Estoque>456</Estoque>
+    <Descricao>ffff</Descricao>
   </Produto>
 </Produtos>
